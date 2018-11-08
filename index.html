@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Snake</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="0" id="way"></div>
+    <div class="ligne" id="l0">
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+    </div>
+    <div class="ligne" id="l1">
+        <div class=" case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+    </div>
+    <div class="ligne" id="l2">
+        <div class=" case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+    </div>
+    <div class="ligne" id="l3">
+        <div class=" case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+    </div>
+    <div class="ligne" id="l4">
+        <div class=" case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+    </div>
+    <div class="ligne" id="l5">
+        <div class=" case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+    </div>
+    <div class="ligne" id="l6">
+        <div class=" case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+    </div>
+    <div class="ligne" id="l7">
+        <div class=" case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+    </div>
+    <div class="ligne" id="l8">
+        <div class=" case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+    </div>
+    <div class="ligne" id="l9">
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+    </div>
+    <div class="ligne" id="l10">
+        <div class=" case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+    </div>
+    <div class="ligne" id="l11">
+        <div class=" case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+    </div>
+    <div class="ligne" id="l12">
+        <div class=" case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+    </div>
+    <div class="ligne" id="l13">
+        <div class=" case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+    </div>
+    <div class="ligne" id="l14">
+        <div class=" case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+    </div>
+    <div class="ligne" id="l15">
+        <div class=" case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+    </div>
+    <div class="ligne" id="l16">
+        <div class=" case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+    </div>
+    <div class="ligne" id="l17">
+        <div class=" case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+    </div>
+    <div class="ligne" id="l18">
+        <div class=" case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+    </div>
+    <div class="ligne" id="l19">
+        <div class=" case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+        <div class="case">
+        </div>
+    </div>
+</body>
+
+</html>
