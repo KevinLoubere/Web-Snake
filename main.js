@@ -151,7 +151,7 @@ $(document).ready(function () {
     $(document).keypress(function (e) {
         if (e.key == "ArrowUp" && $("#way")[0].className != "3") {
             if ($("#way")[0].className == "0") {
-                call_interval = setInterval(moove, 500)
+                call_interval = setInterval(moove, 100)
             }
             $("#way")[0].className = "1"
         }
